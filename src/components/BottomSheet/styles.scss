@@ -1,0 +1,24 @@
+@use "styles/variables";
+
+.bottom-sheet {
+  position: fixed;
+  bottom: 0px;
+  border-top-left-radius: var(--br-300);
+  border-top-right-radius: var(--br-300);
+  background-color: var(--clr-neutral-100);
+  z-index: 5;
+  width: 100%;
+  height: 85%;
+}
+
+.backdrop {
+  position: fixed;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: var(--clr-neutral-900);
+  opacity: 0.7;
+}
