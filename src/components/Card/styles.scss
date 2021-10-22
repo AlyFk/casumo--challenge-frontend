@@ -1,0 +1,76 @@
+@use "styles/variables";
+
+
+.card {
+  max-width: 480px;
+}
+.card__container {
+  padding: 7.6%;
+  aspect-ratio: 1.7 / 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 60% 1fr 1fr;
+  color: var(--clr-neutral-100);
+  border-radius: var(--br-100);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  column-gap: 7.6%;
+  row-gap: 7.6%;
+}
+
+.card--visa {
+  background-color: var(--clr-accent);
+  --clr-primary: var(--clr-neutral-700);
+}
+
+.card--mastercard {
+  background-color: var(--clr-primary-500);
+  --clr-primary: var(--clr-neutral-300);
+}
+
+.card__icon {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.card__cvc {
+  font-size: var(--fs-300);
+  font-weight: 700;
+  text-align: right;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.card__expires {
+  font-size: var(--fs-300);
+  font-weight: 700;
+  text-align: right;
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+
+.card__name {
+  grid-row: 2/3;
+  grid-column: 1/6;
+  font-weight: 700;
+}
+
+.card__number {
+  grid-row: 3/4;
+  grid-column: 1/6;
+  color: var(--clr-primary);
+  word-spacing: 1.5em;
+}
+
+.card__shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 82%;
+  z-index: -1;
+}
+.card__title {
+  font-size: var(--fs-100);
+  color: var(--clr-primary);
+}
