@@ -1,0 +1,40 @@
+@use "styles/variables";
+
+.card-list {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card-list__title {
+  color: var(--clr-primary-100);
+  font-size: var(--fs-900);
+}
+
+.card-list__description {
+  color: #798291;
+  font-size: var(--fs-300);
+  font-weight: 300;
+  margin-top: 0.7rem;
+}
+
+.card-list__item {
+  position: relative;
+}
+
+.card-list__items {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.card-list__items > * + * {
+  margin-top: 1rem;
+}
+
+.card-list__edit-item {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  z-index: 1;
+  cursor: pointer;
+}
