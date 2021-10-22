@@ -1,4 +1,4 @@
-# Doctors List
+# Card Management
 technical challenge casumo
 
 ## Installation
