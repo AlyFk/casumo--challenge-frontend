@@ -1,0 +1,43 @@
+@use "styles/variables";
+
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input--incorect {
+  --clr-main: var(--clr-danger);
+}
+
+.input--corect {
+  --clr-main: var(--clr-success);
+}
+
+.input__label {
+  color: var(--clr-neutral-900);
+  font-size: var(--fs-300);
+  font-weight: 700;
+}
+
+.input__field {
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 0;
+  border-bottom: var(--clr-main, var(--clr-neutral-300)) 1px solid;
+  color: var(--clr-main, var(--clr-neutral-300));
+  outline: 0;
+}
+
+.input__icon {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+
+.input__message--danger {
+  color: var(--clr-danger);
+  position: absolute;
+  bottom: -1.5rem;
+}
